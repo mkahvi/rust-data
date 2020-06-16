@@ -1,0 +1,21 @@
+#[package]
+#name = "mkah-data"
+#version = "0.1.0"
+#authors = ["M.A. <https://github.com/mkahvi>"]
+#edition = "2018"
+#description = "Data manipulation utilities."
+# homepage = ""
+#repository = "https://github.com/mkahvi/rust-data"
+#license = "MIT"
+#publish = false
+#doc = 
+
+[workspace]
+members = [
+	"ini",
+]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+#[dependencies]
+# mkah-core = { git = "https://github.com/mkahvi/rust-core" }
