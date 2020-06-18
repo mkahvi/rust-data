@@ -13,6 +13,5 @@ publish = false
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-# mkah-core = { git = "https://github.com/mkahvi/rust-core" }
+#mkah-traits = { git = "https://github.com/mkahvi/rust-core/blob/master/traits/" } # this doesn't work for some reason
 mkah-traits = { path = "../../core/traits/" }
-# mkah-traits = { git = "https://github.com/mkahvi/rust-core/traits" }
