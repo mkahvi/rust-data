@@ -19,3 +19,9 @@ pub use keyvalue::KeyValue as KeyValue;
 mod constants;
 /// Constants
 pub use constants::*;
+
+mod traits;
+pub use traits::*;
+
+#[cfg(test)]
+mod tests;

@@ -1,3 +1,4 @@
+#[derive(Default)]
 pub struct Config
 {
 	strip_empty_lines: bool,
@@ -43,4 +44,21 @@ impl Config {
 	pub fn set_line_end(&mut self, line_end: String) { self.line_end = line_end; }
 	pub fn get_strict(&self) -> bool { self.strict }
 	pub fn set_strict(&mut self, strict: bool) { self.strict = strict }
+
+	pub fn new() -> Self {
+		Self {
+			strip_empty_lines: false,
+			pad_sections: true,
+			preserve_whitespace: true,
+			allow_nameless_sections: true,
+			unique_sections: false,
+			unique_keys: false,
+			always_quote_strings: false,
+			require_string_quotes: false,
+			comment_char: super::constants::COMMENT,
+			comment_chars: vec![super::constants::COMMENT, super::constants::COMMENT_ALT],
+			line_end: String::from("\n"),
+			strict: false,
+		}
+	}
 }
